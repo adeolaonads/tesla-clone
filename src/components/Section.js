@@ -45,7 +45,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between; // vertical alignment
   align-items: center; // horizontal
-  padding-top: 100px;
+  padding-top: 10px;
   
   
 `
