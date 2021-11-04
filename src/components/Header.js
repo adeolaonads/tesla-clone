@@ -77,22 +77,34 @@ const Container = styled.div`
 `;
 
 const Menu = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 
-    a {
-        font-weight: 600;
-        text-transform: uppercase;
-        padding: 0 10px;
-        flex-wrap: nowrap;
-    }
+  a {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+    
+  }
 
-    @media(max-width: 768px) {
-      display: none;
-    }
+  a:hover {
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 7px;
+    color: black;
+    background-color: white;
+    opacity: 0.76;
+    
+    
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 
@@ -104,7 +116,16 @@ const RightMenu = styled.div`
     text-transform: uppercase;
     margin-right: 10px;
   }
-`;
+
+   a:hover {
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 7px;
+    color: black;
+    opacity: 0.4 ease;
+    transition: 0.5s cubic-bezier(0.5, 0, 0, 0.75);
+  }
+`
 
 const CustomMenu = styled(MenuIcon)`
   cursor: pointer;

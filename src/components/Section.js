@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from "react-reveal/Fade";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Section({
   title,
@@ -13,8 +14,10 @@ function Section({
     <Wrap bgImage={backgroundImg}>
       <Fade bottom>
         <ItemText>
-          <h1>{title}</h1>
-          <p>{description}</p>
+          <ScrollAnimation animateIn="fadeIn">
+            <h1>{title}</h1>
+            <p>{description}</p>
+          </ScrollAnimation>
         </ItemText>
       </Fade>
 
